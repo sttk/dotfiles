@@ -10,6 +10,7 @@ set nobackup
 
 set noswapfile
 
+set clipboard+=unnamed
 
 "" ==== Formatting
 
@@ -45,4 +46,12 @@ set visualbell
 set noshowmatch
 let g:loaded_matchparen=1
 
+"" Color of cursor line
 hi CursorLine cterm=NONE ctermfg=NONE ctermbg=255
+
+"" Color of chars for eol, extends,precedes
+hi NonText ctermbg=NONE ctermfg=59 guibg=NONE guifg=NONE
+
+"" Color of chars for nbsp, tab, trail
+hi SpecialKey ctermbg=NONE ctermfg=59 guibg=NONE guifg=NONE
+
